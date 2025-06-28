@@ -52,8 +52,8 @@ MonoBehaviour:
     zFailOperation: 0
   m_ShadowTransparentReceive: 0
   m_RenderingMode: 0
-  m_DepthPrimingMode: 0
-  m_CopyDepthMode: 1
+  m_DepthPrimingMode: 2
+  m_CopyDepthMode: 0
   m_AccurateGbufferNormals: 0
   m_IntermediateTextureMode: 1
 --- !u!114 &1626588256852553276
@@ -76,15 +76,15 @@ MonoBehaviour:
       RenderQueueType: 0
       LayerMask:
         serializedVersion: 2
-        m_Bits: 1
+        m_Bits: 4294967295
       PassNames: []
     overrideMaterial: {fileID: 0}
     overrideMaterialPassIndex: 0
     overrideShader: {fileID: 4800000, guid: 4971da7d49419404ca85ab0b3a62b4a4, type: 3}
     overrideShaderPassIndex: 0
     overrideMode: 2
-    overrideDepthState: 1
-    depthCompareFunction: 4
+    overrideDepthState: 0
+    depthCompareFunction: 0
     enableWrite: 0
     stencilSettings:
       overrideStencilState: 0

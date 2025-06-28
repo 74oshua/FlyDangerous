@@ -11,13 +11,13 @@ public class ExternalCamera : MonoBehaviour
     private Camera _externalCamera;
     private RenderTexture _outputTexture;
 
-    // public ref RenderTexture outputTexture => ref _outputTexture;
-
     public RawImage outputImage = null;
 
     void Start()
     {
         _externalCamera = GetComponent<Camera>();
+        _externalCamera.depthTextureMode = _externalCamera.depthTextureMode | DepthTextureMode.Depth;
+
         _outputTexture = new RenderTexture(256, 256, 1, UnityEngine.Experimental.Rendering.DefaultFormat.LDR);
         _externalCamera.targetTexture = _outputTexture;
 
